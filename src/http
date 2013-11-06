@@ -1,0 +1,10 @@
+service http
+{
+flags = REUSE
+socket_type = stream
+wait = no
+user = root
+server = /usr/bin/java
+server_args = -classpath <enter your path here> Stdin2File
+disable = no
+}
